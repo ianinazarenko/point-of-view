@@ -5,16 +5,13 @@ Credits to:
 
 */
 
-
-
 /* 
 =================
 Fonts
 ================= 
 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@700&display=swap'); */
-
 
 /* 
 =================
@@ -23,15 +20,16 @@ Varibles
 */
 
 :root {
-  --clr-primary-1: #392A46;
+  --clr-primary-1: #392a46;
   --clr-primary-5: #750dd9;
-  --clr-primary-9: #b394cf;
+  --clr-primary-9: #f6b1ff;
   --clr-secondary-1: #ff7b49;
-  --clr-secondary-5: #FFBF42;
-  --clr-secondary-9: #F9F871;
+  --clr-secondary-2: #ffe5dc;
+  --clr-secondary-5: #ffbf42;
+  --clr-secondary-9: #f9f871;
   --clr-grey-1: #270082;
-  --clr-grey-5: #00559E;
-  --clr-grey-9: #c3d3e0;
+  --clr-grey-5: #00559e;
+  --clr-grey-9: #e2e9f0;
   --clr-white: #fff;
   --ff-primary: "Poppins", sans-serif;
   /* --ff-secondary: "Roboto Slab", sans-serif; */
@@ -195,7 +193,6 @@ Navbar
 ================= 
 */
 
-
 /* 
 =================
 Header
@@ -242,8 +239,9 @@ Header
 
 @media screen and (min-width: 768px) {
   .header {
-    background: linear-gradient(rgba(117, 13, 217, 0.4), rgba(255, 123, 73, 0.4)),
-      url('../img/main.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(117, 13, 217, 0.4),
+        rgba(255, 123, 73, 0.4)),
+      url("../img/main.jpg") center/cover no-repeat;
   }
 
   .header__banner {
@@ -286,7 +284,7 @@ About
   }
 
   .about__img::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 1.25rem;
     right: 1.25rem;
@@ -296,3 +294,78 @@ About
     z-index: -1;
   }
 }
+
+/* 
+=================
+Services
+================= 
+*/
+.--light-bgc {
+  /* background-color: var(--clr-secondary-2); */
+  background-color: var(--clr-grey-9);
+}
+
+.services__unit {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services__icon {
+  background-color: var(--clr-primary-5);
+  color: var(--clr-grey-1);
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.services__text {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 660px) {
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services__unit {
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+  @media screen and (min-width: 992px) {
+    .services__unit {
+      flex: 0 1 calc(33.333% - 1rem);
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+    .services__unit {
+      display: flex;
+      text-align: left;
+    }
+
+    .services__info {
+      padding-left: 1rem;
+    }
+
+    .services__text {
+      margin: 0;
+      /* max-width: 18.75rem; */
+    }
+
+    .services__icon {
+      align-self: start;
+    }
+  }
+}
+
+/* 
+=================
+
+================= 
+*/
