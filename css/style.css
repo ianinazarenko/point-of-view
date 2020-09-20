@@ -155,7 +155,7 @@ More Global Styles
 
 .btn:hover {
   color: var(--clr-primary-1);
-  background-color: var(--clr-primary-9);
+  background-color: var(--clr-secondary-5);
 }
 
 .section {
@@ -355,13 +355,167 @@ Services
 
     .services__text {
       margin: 0;
-      /* max-width: 18.75rem; */
     }
 
     .services__icon {
       align-self: start;
     }
   }
+}
+
+/* 
+=================
+Featured Tours
+================= 
+*/
+.featured__tour-card {
+  transition: var(--transition);
+  background-color: var(--clr-grey-9);
+  box-shadow: 0 0 0.75rem rgba(0, 85, 158, 0.2);
+  margin-bottom: 2rem;
+}
+
+.featured__tour-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 0.75rem rgba(0, 85, 158, 0.4);
+}
+
+.featured__img-container {
+  position: relative;
+}
+
+.featured__photo {
+  height: 18rem;
+  object-fit: cover;
+}
+
+.featured__date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  background-color: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+}
+
+.featured__info {
+  padding: 1.5rem 2rem;
+}
+
+.featured__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.featured__footer span {
+  text-transform: capitalize;
+  line-height: 0;
+  color: var(--clr-primary-5);
+}
+
+.featured__btn {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+  .featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .featured__tour-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+}
+
+@media screen and (min-width: 1170px) {
+
+  .featured__tour-card {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+
+}
+
+/* 
+=================
+Contact
+================= 
+*/
+.--color-bg {
+  background-color: var(--clr-primary-5);
+}
+
+.contact__title,
+.contact__title p {
+  color: var(--clr-white);
+}
+
+.contact__form {
+  display: flex;
+  max-width: 28rem;
+}
+
+.contact__input {
+  flex: 1 1 auto;
+  color: var(--clr-primary-5);
+}
+
+.contact__input,
+.contact__btn {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: var(--spacing);
+  background-color: var(--clr-white);
+  text-transform: capitalize;
+  border: 2px solid transparent;
+  /* border: none; */
+}
+
+.contact__input::placeholder {
+  color: inherit;
+}
+
+.contact__btn {
+  font-family: var(--ff-primary);
+  margin-left: 0.5rem;
+  background-color: var(--clr-secondary-5);
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 700;
+}
+
+.contact__btn:hover {
+  background-color: transparent;
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+}
+
+@media screen and (min-width: 992px) {
+
+  .contact {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contact__form {
+    flex: 1 1 auto;
+    max-width: 50%;
+    padding-left: 2rem;
+  }
+
 }
 
 /* 
