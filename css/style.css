@@ -192,6 +192,117 @@ More Global Styles
 Navbar
 ================= 
 */
+.navbar__logo {
+  width: 10rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--clr-white);
+  box-shadow: 0 5px 15px rgba(0, 85, 158, 0.2);
+  z-index: 2;
+}
+
+.navbar__icons {
+  display: none;
+}
+
+.navbar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar__toggle {
+  background-color: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.navbar__toggle:hover {
+  transform: scale(1.2);
+}
+
+.navbar__link {
+  display: block;
+  padding: 0.8rem 0 0.8rem 0;
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+  letter-spacing: var(--spacing);
+  font-size: 1rem;
+  transition: var(--transition);
+  border-top: solid 0.2rem transparent;
+  border-bottom: solid 0.2rem transparent;
+}
+
+.navbar__link:hover {
+  color: var(--clr-secondary-5);
+  border-bottom: solid 0.2rem var(--clr-secondary-5);
+  padding-left: 0.75rem;
+}
+
+.navbar__navigation {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+
+}
+
+.--show-navigation {
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar__toggle {
+    display: none;
+  }
+
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__navigation {
+    height: auto;
+    display: flex;
+  }
+
+  .navbar__header {
+    padding: 1rem 0;
+  }
+
+  .navbar__link {
+    padding: 0 0;
+    margin: 0 0.75rem;
+  }
+
+  .navbar__link:hover {
+    padding: 0 0;
+  }
+
+  .navbar__icons {
+    display: flex;
+  }
+
+  .navbar__icon {
+    font-size: 1.5rem;
+    color: var(--clr-primary-5);
+    margin: 0 0.75rem;
+    transition: var(--transition);
+  }
+
+  .navbar__icon:hover {
+    color: var(--clr-secondary-5);
+  }
+}
 
 /* 
 =================
@@ -593,7 +704,7 @@ Footer
 }
 
 .footer__navigation,
-.footer__social {
+.footer__icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -618,7 +729,8 @@ Footer
 }
 
 .footer__icon {
-  color: var(--clr-primary-9);
+  /* color: var(--clr-primary-9); */
+  color: var(--clr-white);
   font-size: 2rem;
 }
 

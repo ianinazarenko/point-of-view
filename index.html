@@ -2,28 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Point of View || Individual Excursions</title>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/78d7470de0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <!-- header -->
 
     <header id="home">
-
         <!-- navbar -->
-        <nav>
-            <div class="--section-centered">
+        <nav class="navbar">
+            <div class="navbar__container --section-centered">
                 <!-- nav header -->
-                <div class="nav__header">
-                    <img src="./img/logo.svg" alt="Point of View Logo" class="nav__logo">
+                <div class="navbar__header">
+                    <img src="./img/logo.svg" alt="Point of View Logo" class="navbar__logo" />
+                    <button id="toggle" class="navbar__toggle" type="button"><i class="fas fa-bars"></i></button>
                 </div>
                 <!-- end of nav header -->
+
+                <!-- navbar links -->
+                <ul class="navbar__navigation" id="navbar-links">
+                    <li>
+                        <a href="#home" class="navbar__link --scroll-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="navbar__link --scroll-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="navbar__link --scroll-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#featured" class="navbar__link --scroll-link">Featured</a>
+                    </li>
+                    <li>
+                        <a href="#gallery" class="navbar__link --scroll-link">Gallery</a>
+                    </li>
+                </ul>
+                <!-- end of navbar links -->
+
+                <!-- navbar icons -->
+                <ul class="navbar__icons">
+                    <li>
+                        <a href="https://www.facebook.com" class="navbar__icon" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com" class="navbar__icon" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.flickr.com" class="navbar__icon" target="_blank">
+                            <i class="fab fa-flickr"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end of navbar icons -->
             </div>
         </nav>
         <!-- end of navbar -->
@@ -33,8 +72,8 @@
             <div class="header__banner">
                 <h1>different angle</h1>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla consequatur illum quaerat aliquid
-                    aliquam vero?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                    consequatur illum quaerat aliquid aliquam vero?
                 </p>
                 <a href="#featured" class="btn header__btn --scroll-link">explore it</a>
             </div>
@@ -52,16 +91,18 @@
         <div class="--section-centered about">
             <!-- about image wrapper -->
             <article class="about__img">
-                <img src="img/about.jpg" alt="great city view" class="about__photo">
+                <img src="img/about.jpg" alt="great city view" class="about__photo" />
             </article>
             <article class="about__info">
                 <h3>different point of view</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum numquam omnis facere cumque voluptas
-                    autem id amet! Possimus, aspernatur corporis. Cumque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                    numquam omnis facere cumque voluptas autem id amet! Possimus,
+                    aspernatur corporis. Cumque.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores odit quae?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                    asperiores odit quae?
                 </p>
                 <a href="#" class="btn">read more</a>
             </article>
@@ -85,8 +126,8 @@
                 <div class="services__info">
                     <h4 class="services__title">Unknown places</h4>
                     <p class="services__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, iure. A debitis
-                        molestiae cumque quia.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, iure. A debitis molestiae cumque quia.
                     </p>
                 </div>
             </article>
@@ -99,8 +140,8 @@
                 <div class="services__info">
                     <h4 class="services__title">Breathtaking view</h4>
                     <p class="services__text">
-                        Lorem ipsum dolor sit amet adipisicing elit. Quisquam reiciendis incidunt
-                        pariatur perferendis veniam.
+                        Lorem ipsum dolor sit amet adipisicing elit. Quisquam reiciendis
+                        incidunt pariatur perferendis veniam.
                     </p>
                 </div>
             </article>
@@ -113,15 +154,14 @@
                 <div class="services__info">
                     <h4 class="services__title">Amazing photos</h4>
                     <p class="services__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium temporibus
-                        iure saepe alias iusto.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Praesentium temporibus iure saepe alias iusto.
                     </p>
                 </div>
             </article>
             <!-- enf of single service -->
         </div>
         <!-- end of services -->
-
     </section>
     <!-- end of services -->
 
@@ -136,16 +176,15 @@
             <!-- single tour -->
             <article class="featured__tour-card">
                 <div class="featured__img-container">
-                    <img src="./img/city-art.jpg" alt="wall_art" class="featured__photo">
-                    <p class="featured__date">
-                        August, 13th, 2020
-                    </p>
+                    <img src="./img/city-art.jpg" alt="wall_art" class="featured__photo" />
+                    <p class="featured__date">August, 13th, 2020</p>
                 </div>
                 <div class="featured__info">
                     <h4>Art of the city</h4>
                     <p class="featured__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cumque repudiandae illum harum at
-                        omnis quam? Numquam itaque cum nemo?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                        cumque repudiandae illum harum at omnis quam? Numquam itaque cum
+                        nemo?
                     </p>
                     <div class="featured__footer">
                         <span class="featured__way-of-travel">
@@ -161,16 +200,15 @@
             <!-- single tour -->
             <article class="featured__tour-card">
                 <div class="featured__img-container">
-                    <img src="./img/city-waves.jpg" alt="gulf-coast" class="featured__photo">
-                    <p class="featured__date">
-                        August, 17th, 2020
-                    </p>
+                    <img src="./img/city-waves.jpg" alt="gulf-coast" class="featured__photo" />
+                    <p class="featured__date">August, 17th, 2020</p>
                 </div>
                 <div class="featured__info">
                     <h4>City waves</h4>
                     <p class="featured__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla quo eligendi non
-                        officiis aperiam perspiciatis, autem accusantium ducimus aliquid velit!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                        nulla quo eligendi non officiis aperiam perspiciatis, autem
+                        accusantium ducimus aliquid velit!
                     </p>
                     <div class="featured__footer">
                         <span class="featured__way-of-travel">
@@ -186,16 +224,15 @@
             <!-- single tour -->
             <article class="featured__tour-card">
                 <div class="featured__img-container">
-                    <img src="./img/night-city.jpg" alt="night_city" class="featured__photo">
-                    <p class="featured__date">
-                        August, 15th, 2020
-                    </p>
+                    <img src="./img/night-city.jpg" alt="night_city" class="featured__photo" />
+                    <p class="featured__date">August, 15th, 2020</p>
                 </div>
                 <div class="featured__info">
                     <h4>City at night</h4>
                     <p class="featured__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, autem rem. Incidunt officiis
-                        accusamus eos obcaecati non qui saepe.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                        autem rem. Incidunt officiis accusamus eos obcaecati non qui
+                        saepe.
                     </p>
                     <div class="featured__footer">
                         <span class="featured__way-of-travel">
@@ -211,16 +248,15 @@
             <!-- single tour -->
             <article class="featured__tour-card">
                 <div class="featured__img-container">
-                    <img src="./img/city-architecture.jpg" alt="architecture" class="featured__photo">
-                    <p class="featured__date">
-                        August, 20th, 2020
-                    </p>
+                    <img src="./img/city-architecture.jpg" alt="architecture" class="featured__photo" />
+                    <p class="featured__date">August, 20th, 2020</p>
                 </div>
                 <div class="featured__info">
                     <h4>architecture</h4>
                     <p class="featured__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio recusandae earum magnam veniam
-                        doloribus, aut consequuntur esse exercitationem!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
+                        recusandae earum magnam veniam doloribus, aut consequuntur esse
+                        exercitationem!
                     </p>
                     <div class="featured__footer">
                         <span class="featured__way-of-travel">
@@ -240,7 +276,7 @@
     </section>
     <!-- end of featured tours -->
     <!-- contact -->
-    <section class="section --color-bg">
+    <section class="section --color-bg" id="contact">
         <div class="contact --section-centered">
             <!-- contact title -->
             <article class="contact__title">
@@ -250,7 +286,7 @@
             <!-- end of contact title -->
             <!-- contact form -->
             <form action="" class="contact__form">
-                <input type="email" name="email" id="email" class="contact__input" placeholder="your e-mail">
+                <input type="email" name="email" id="email" class="contact__input" placeholder="your e-mail" />
                 <button type="submit" class="contact__btn">Submit</button>
             </form>
             <!-- end of contact form -->
@@ -261,11 +297,10 @@
     <!-- gallery -->
     <section id="gallery">
         <div class="gallery">
-
             <!-- single item -->
             <article class="gallery__img-container">
-                <img src="./img/gallery_1.jpg" alt="city view" class="gallery__photo">
-                <a href="#featured" class="gallery__icon">
+                <img src="./img/gallery_1.jpg" alt="city view" class="gallery__photo" />
+                <a href="#featured" class="gallery__icon --scroll-link">
                     <i class="fas fa-search"></i>
                 </a>
             </article>
@@ -273,8 +308,8 @@
 
             <!-- single item -->
             <article class="gallery__img-container">
-                <img src="./img/gallery_8.jpg" alt="city view" class="gallery__photo">
-                <a href="#featured" class="gallery__icon">
+                <img src="./img/gallery_8.jpg" alt="city view" class="gallery__photo" />
+                <a href="#featured" class="gallery__icon --scroll-link">
                     <i class="fas fa-search"></i>
                 </a>
             </article>
@@ -282,8 +317,8 @@
 
             <!-- single item -->
             <article class="gallery__img-container">
-                <img src="./img/gallery_3.jpg" alt="city view" class="gallery__photo">
-                <a href="#featured" class="gallery__icon">
+                <img src="./img/gallery_3.jpg" alt="city view" class="gallery__photo" />
+                <a href="#featured" class="gallery__icon --scroll-link">
                     <i class="fas fa-search"></i>
                 </a>
             </article>
@@ -291,8 +326,8 @@
 
             <!-- single item -->
             <article class="gallery__img-container">
-                <img src="./img/gallery_7.jpg" alt="city view" class="gallery__photo">
-                <a href="#featured" class="gallery__icon">
+                <img src="./img/gallery_7.jpg" alt="city view" class="gallery__photo" />
+                <a href="#featured" class="gallery__icon --scroll-link">
                     <i class="fas fa-search"></i>
                 </a>
             </article>
@@ -300,8 +335,8 @@
 
             <!-- single item -->
             <article class="gallery__img-container">
-                <img src="./img/gallery_6.jpg" alt="city view" class="gallery__photo">
-                <a href="#featured" class="gallery__icon">
+                <img src="./img/gallery_6.jpg" alt="city view" class="gallery__photo" />
+                <a href="#featured" class="gallery__icon --scroll-link">
                     <i class="fas fa-search"></i>
                 </a>
             </article>
@@ -309,8 +344,8 @@
 
             <!-- single item -->
             <article class="gallery__img-container">
-                <img src="./img/gallery_2.jpg" alt="city view" class="gallery__photo">
-                <a href="#featured" class="gallery__icon">
+                <img src="./img/gallery_2.jpg" alt="city view" class="gallery__photo" />
+                <a href="#featured" class="gallery__icon --scroll-link">
                     <i class="fas fa-search"></i>
                 </a>
             </article>
@@ -318,8 +353,8 @@
 
             <!-- single item -->
             <article class="gallery__img-container">
-                <img src="./img/gallery_5.jpg" alt="city view" class="gallery__photo">
-                <a href="#featured" class="gallery__icon">
+                <img src="./img/gallery_5.jpg" alt="city view" class="gallery__photo" />
+                <a href="#featured" class="gallery__icon --scroll-link">
                     <i class="fas fa-search"></i>
                 </a>
             </article>
@@ -327,13 +362,12 @@
 
             <!-- single item -->
             <article class="gallery__img-container">
-                <img src="./img/gallery_4.jpg" alt="city view" class="gallery__photo">
-                <a href="#featured" class="gallery__icon">
+                <img src="./img/gallery_4.jpg" alt="city view" class="gallery__photo" />
+                <a href="#featured" class="gallery__icon --scroll-link">
                     <i class="fas fa-search"></i>
                 </a>
             </article>
             <!-- end of single item -->
-
         </div>
     </section>
     <!-- end of gallery -->
@@ -343,39 +377,24 @@
         <!-- footer links -->
         <ul class="footer__navigation">
             <li>
-                <a href="#home" class="footer__link --scroll-link">
-                    Home
-                </a>
+                <a href="#home" class="footer__link --scroll-link">Home</a>
             </li>
             <li>
-                <a href="#about" class="footer__link --scroll-link">
-                    About
-                </a>
+                <a href="#about" class="footer__link --scroll-link">About</a>
             </li>
             <li>
-                <a href="#services" class="footer__link --scroll-link">
-                    Services
-                </a>
+                <a href="#services" class="footer__link --scroll-link">Services</a>
             </li>
             <li>
-                <a href="#featured" class="footer__link --scroll-link">
-                    Featured
-                </a>
+                <a href="#featured" class="footer__link --scroll-link">Featured</a>
             </li>
             <li>
-                <a href="#contact" class="footer__link --scroll-link">
-                    Contact
-                </a>
-            </li>
-            <li>
-                <a href="#gallery" class="footer__link --scroll-link">
-                    Gallery
-                </a>
+                <a href="#gallery" class="footer__link --scroll-link">Gallery</a>
             </li>
         </ul>
         <!-- end of footer links -->
         <!-- footer icons -->
-        <ul class="footer__social">
+        <ul class="footer__icons">
             <li>
                 <a href="https://www.facebook.com" class="footer__icon" target="_blank">
                     <i class="fab fa-facebook"></i>
@@ -387,18 +406,21 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com" class="footer__icon" target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://www.flickr.com" class="footer__icon" target="_blank">
+                    <i class="fab fa-flickr"></i>
                 </a>
             </li>
         </ul>
         <!-- end of footer icons -->
         <p class="copyright">
-            Copyright &copy; Point of View individual city excursions <span id="date"></span>. All rights reserved
+            Copyright &copy; Point of View individual city excursions
+            <span id="date"></span>. All rights reserved
         </p>
     </footer>
     <!-- end of footer -->
 
+    <!-- JS script -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
