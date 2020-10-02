@@ -563,12 +563,16 @@ Contact
 
 .contact__form {
   display: flex;
+  flex-wrap: wrap;
   max-width: 28rem;
+  align-items: flex-start;
 }
 
 .contact__input {
   flex: 1 1 auto;
   color: var(--clr-primary-5);
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact__input,
@@ -605,7 +609,6 @@ Contact
 
 .contact__btn {
   font-family: var(--ff-primary);
-  margin-left: 0.5rem;
   background-color: var(--clr-secondary-5);
   color: var(--clr-primary-5);
   cursor: pointer;
