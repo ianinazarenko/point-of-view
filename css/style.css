@@ -242,7 +242,6 @@ Navbar
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-
 }
 
 .--show-navigation {
@@ -340,11 +339,13 @@ Header
   border-color: var(--clr-white);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .header {
-    background: linear-gradient(rgba(117, 13, 217, 0.4),
-        rgba(255, 123, 73, 0.4)),
-      url("../img/main.jpg") center/cover no-repeat;
+    background: linear-gradient(
+        rgba(117, 13, 217, 0.4),
+        rgba(255, 123, 73, 0.4)
+      ),
+      url("../img/main-1140.jpg") center/cover no-repeat;
   }
 
   .header__banner {
@@ -353,6 +354,52 @@ Header
 
   .header__banner p {
     max-width: 45rem;
+  }
+}
+
+@media screen and (min-width: 1141px) {
+  .header {
+    background: linear-gradient(
+        rgba(117, 13, 217, 0.4),
+        rgba(255, 123, 73, 0.4)
+      ),
+      url("../img/main-1440.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .header {
+    background: linear-gradient(
+        rgba(117, 13, 217, 0.4),
+        rgba(255, 123, 73, 0.4)
+      ),
+      url("../img/main-1920.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-width: 1921px),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .header {
+    background: linear-gradient(
+        rgba(117, 13, 217, 0.4),
+        rgba(255, 123, 73, 0.4)
+      ),
+      url("../img/main-2880.jpg") center/cover no-repeat;
+  }
+}
+
+@media screen and (min-width: 2881px) {
+  .header {
+    background: linear-gradient(
+        rgba(117, 13, 217, 0.4),
+        rgba(255, 123, 73, 0.4)
+      ),
+      url("../img/main.jpg") center/cover no-repeat;
   }
 }
 
@@ -525,26 +572,21 @@ Featured Tours
 }
 
 @media screen and (min-width: 768px) {
-
   .featured {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
   }
 
   .featured__tour-card {
     flex: 0 0 calc(50% - 1rem);
   }
-
 }
 
 @media screen and (min-width: 1170px) {
-
   .featured__tour-card {
     flex: 0 0 calc(33.333% - 1rem);
   }
-
 }
 
 /* 
@@ -623,7 +665,6 @@ Contact
 }
 
 @media screen and (min-width: 992px) {
-
   .contact {
     display: flex;
     align-items: flex-start;
@@ -640,7 +681,6 @@ Contact
   .contact__title {
     max-width: 50%;
   }
-
 }
 
 /* 
@@ -689,7 +729,6 @@ Gallery
   .gallery__img-container {
     flex-basis: 50%;
   }
-
 }
 
 @media screen and (min-width: 992px) {
